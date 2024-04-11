@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: `${process.env.API_URL}/v1`,
+  baseURL: `${process.env.API_URL}`,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -9,7 +9,7 @@ const apiClient = axios.create({
   }
 })
 const uploadClient = axios.create({
-  baseURL: `${process.env.API_URL}/v1`,
+  baseURL: `${process.env.API_URL}`,
   method: 'post',
   headers: {
     'Content-Type': 'multipart/form-data'
